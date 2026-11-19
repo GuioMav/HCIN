@@ -1,2 +1,6 @@
 .DS_Store
 node_modules/
+*.docx
+*.pdf
+*.zip
+__pycache__/
