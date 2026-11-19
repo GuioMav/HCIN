@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe | Recipe Finder</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="recipe">
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol><symbol id="i-kitchen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 10h14"/><path d="M9 6v2M9 13v3"/></symbol><symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol><symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9h4a1.8 1.8 0 010 3.5h-3a1.8 1.8 0 000 3.5h4M12 7v2M12 16v2"/></symbol><symbol id="i-chef" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 14a4 4 0 01-1-7.9A5 5 0 0116 5a4 4 0 012 7.6V14z"/><path d="M7 14v5h10v-5"/></symbol><symbol id="i-stove" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="8" cy="13" r="2.5"/><circle cx="16" cy="13" r="2.5"/><path d="M7 4v1M12 3v2M17 4v1"/></symbol><symbol id="i-microwave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><rect x="5" y="8" width="10" height="8" rx="1"/><path d="M18 9v.01M18 12v.01M18 15v.01"/></symbol><symbol id="i-kettle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h11l-1.2-9.5A3 3 0 0012.8 8h-2.6a3 3 0 00-3 2.5z"/><path d="M9 8V6h5v2"/><path d="M16 11h2a2 2 0 012 2v1"/><path d="M7 12L4 9"/></symbol><symbol id="i-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v8a2 2 0 002 2v8M9 3v8a2 2 0 01-2 2M7 3v6"/><path d="M17 21V3c-2 1.5-3 4-3 7v4h3"/></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9a4.8 4.8 0 019-3 4.8 4.8 0 019 3c-2 4.6-9 9-9 9z"/></symbol><symbol id="i-heart-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M12 20s-7-4.4-9-9a4.8 4.8 0 019-3 4.8 4.8 0 019 3c-2 4.6-9 9-9 9z"/></symbol><symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.6M8.2 13.2l7.6 4.6"/></symbol><symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18 14a6.5 6.5 0 013.5 6"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></symbol><symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.01"/></symbol><symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></symbol><symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol><symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></symbol><symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/></symbol><symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol><symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 8H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol><symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-pot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v6a4 4 0 01-4 4H8a4 4 0 01-4-4z"/><path d="M2 10h20M9 6c0-1 1-1 1-2M14 6c0-1 1-1 1-2"/></symbol></svg>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Recipe Finder home">
+      <span class="logo-mark" aria-hidden="true"><svg class="icon" style="color:#fff;width:24px;height:24px"><use href="#i-pot"/></svg></span>
+      <span>Recipe Finder<small>Student kitchen</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <ul><li><a href="index.html"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-home"/></svg><span class="label-text">Home</span></a></li><li><a href="kitchen.html"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-kitchen"/></svg><span class="label-text">My Kitchen</span> <span class="badge-count" id="saved-count">0</span></a></li><li><a href="helper.html"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-chat"/></svg><span class="label-text">Kitchen Helper</span></a></li><li><a href="settings.html"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-settings"/></svg><span class="label-text">Settings</span></a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <a href="results.html?ing=egg,rice,onion&amp;eq=stove,microwave&amp;time=30&amp;cost=20">Results</a> / <span id="r-crumb" aria-current="page"></span></nav>
+<div class="recipe-head">
+  <img id="r-img" src="" alt="" width="400" height="260">
+  <div>
+    <h1 id="r-name"></h1>
+    <p class="muted" id="r-desc"></p>
+    <p id="r-rating" style="margin-bottom:4px"></p>
+    <p class="social-proof" id="r-social"></p>
+    <div class="stats">
+      <div class="stat"><b id="r-time"></b><span>Total time</span></div>
+      <div class="stat"><b id="r-cost"></b><span id="cost-label">per serving</span></div>
+      <div class="stat"><b id="r-diff"></b><span>Difficulty</span></div>
+      <div class="stat"><b id="r-eq" style="font-size:1em"></b><span>Equipment</span></div>
+    </div>
+    <div class="actions-row">
+      <a class="btn btn-primary btn-lg" id="start-cook" href="cook.html"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-timer"/></svg>Start cooking</a>
+      <button class="btn btn-secondary" type="button" id="r-save" aria-pressed="false">Save</button>
+      <button class="btn btn-ghost" type="button" id="r-share"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-share"/></svg>Share</button>
+      <button class="btn btn-ghost" type="button" id="r-together"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-users"/></svg>Cook together</button>
+    </div>
+  </div>
+</div>
+<div class="grid-2" style="margin-top:28px">
+  <section class="panel" aria-labelledby="ing-h">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <h2 id="ing-h" style="margin:0">Ingredients</h2>
+      <div style="display:flex;align-items:center;gap:10px"><span id="serv-label" class="small"><b>Servings</b></span>
+        <div class="stepper" role="group" aria-labelledby="serv-label"><button type="button" id="serv-minus" aria-label="Fewer servings">−</button><output id="serv-out" aria-live="polite">1</output><button type="button" id="serv-plus" aria-label="More servings">+</button></div></div>
+    </div>
+    <p class="small muted" style="margin:8px 0 4px">Checked against your saved pantry. <span id="need-summary"></span></p>
+    <ul class="ing-list" id="ing-list"></ul>
+    <div class="shop-row" id="shop-row">
+      <a class="btn btn-secondary" id="shop-wa" href="#" target="_blank" rel="noopener"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-cart"/></svg>Send shopping list</a>
+      <span class="help" id="shop-help" style="margin:0">Sends only the items marked "Need to buy", for example to a flatmate who is at the shop.</span>
+    </div>
+  </section>
+  <section class="panel" aria-labelledby="steps-h">
+    <h2 id="steps-h">Method</h2>
+    <ol class="steps-preview" id="steps-preview"></ol>
+    <p class="small muted">Press <b>Start cooking</b> to go through the steps one at a time with built-in timers.</p>
+  </section>
+</div>
+<section class="panel" style="margin-top:24px" aria-labelledby="rev-h">
+  <h2 id="rev-h">Reviews and tips from students</h2>
+  <div class="grid-2">
+    <div id="review-list"></div>
+    <form id="review-form" class="panel" style="box-shadow:none" novalidate aria-labelledby="form-h">
+      <h3 id="form-h">Made it? Leave a tip</h3>
+      <div class="error-msg" id="star-error" role="alert" hidden><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-alert"/></svg><span></span></div>
+      <fieldset class="star-input"><legend>Your rating (required)</legend>
+        <input type="radio" name="stars" id="s1" value="1"><label for="s1" aria-label="1 star">★</label><input type="radio" name="stars" id="s2" value="2"><label for="s2" aria-label="2 stars">★</label><input type="radio" name="stars" id="s3" value="3"><label for="s3" aria-label="3 stars">★</label><input type="radio" name="stars" id="s4" value="4"><label for="s4" aria-label="4 stars">★</label><input type="radio" name="stars" id="s5" value="5"><label for="s5" aria-label="5 stars">★</label>
+      </fieldset>
+      <label for="review-text">Your tip or comment (optional)</label>
+      <textarea id="review-text" maxlength="300" aria-describedby="rt-help" placeholder="e.g. I used leftover rice and it worked well"></textarea>
+      <p class="help" id="rt-help">Up to 300 characters. Tips like swaps and cheaper brands help other students most.</p>
+      <button class="btn btn-primary" type="submit">Post review</button>
+    </form>
+  </div>
+</section>
+
+<div class="modal-backdrop" id="share-modal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="share-title">
+  <div class="modal-head"><h2 id="share-title">Share</h2><button class="close-x" type="button" data-close aria-label="Close">×</button></div>
+  <p class="muted">Send this recipe to a friend or your res group.</p>
+  <div class="share-options"><a class="btn btn-primary" id="wa-share" href="#" target="_blank" rel="noopener"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-chat"/></svg>Share on WhatsApp</a><button class="btn btn-secondary" type="button" id="copy-link"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-share"/></svg>Copy link</button></div>
+  <label for="share-link">Recipe link</label><input type="text" id="share-link" readonly>
+  <p class="help" id="copy-status" role="status"></p>
+</div></div>
+
+<div class="modal-backdrop" id="together-modal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="tog-title">
+  <div class="modal-head"><h2 id="tog-title">Cook together</h2><button class="close-x" type="button" data-close aria-label="Close">×</button></div>
+  <p class="muted">Invite flatmates or friends from res. Cooking for more people is cheaper per person and more fun.</p>
+  <div class="row-2"><div><label for="people">How many people?</label><select id="people"><option>2</option><option selected>3</option><option>4</option><option>5</option></select></div>
+  <div><label for="cook-time">What time?</label><select id="cook-time"><option>17:30</option><option selected>18:30</option><option>19:30</option></select></div></div>
+  <p class="label" style="margin-top:16px">Message preview</p>
+  <p class="preview-msg" id="invite-preview" aria-live="polite"></p>
+  <a class="btn btn-primary" id="invite-wa" href="#" target="_blank" rel="noopener"><svg class="icon " aria-hidden="true" focusable="false"><use href="#i-chat"/></svg>Send invite on WhatsApp</a>
+</div></div>
+
+</main>
+<footer class="site-footer"><div class="inner"><span>Recipe Finder prototype for IIE students. HCIN6222 POE.</span><span>Prices are estimates in Rand per serving.</span></div></footer>
+<div id="toast" class="toast-wrap" role="status" aria-live="polite"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
